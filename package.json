@@ -1,0 +1,20 @@
+{
+  "name": "aspose-pdf-lib",
+  "version": "0.0.+",
+  "description": "Aspose.PDF for NodeJS via .NET",
+  "main": "index.js",
+  "author": {
+    "name": "Andriy Andrukhovskiy"
+  },
+  "scripts": {
+    "net-build": "dotnet build ./src/AsposePdfLib.csproj"
+  },
+  "dependencies": {
+    "node-api-dotnet": "0.4.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.21.0"
+  },
+  "eslintConfig": {
+  }
+}
