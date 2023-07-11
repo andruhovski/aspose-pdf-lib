@@ -3,6 +3,10 @@
   "version": "0.0.+",
   "description": "Aspose.PDF for NodeJS via .NET",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "lib/"
+  ],
   "author": {
     "name": "Andriy Andrukhovskiy"
   },
