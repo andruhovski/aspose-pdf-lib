@@ -27,7 +27,7 @@ namespace AsposePdfNodeLib
         public static string getModDate(string inputFile)
         {
             var document = new Document(inputFile);
-            return document.Info.ModDate.ToLongDateString();
+            return document.Info.ModDate.ToShortDateString();
         }
     }
 }
