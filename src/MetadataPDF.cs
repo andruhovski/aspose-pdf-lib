@@ -2,7 +2,7 @@ using Aspose.Pdf;
 using Microsoft.JavaScript.NodeApi;
 using System.Text.Json;
 
-namespace AsposePdfNodeLib
+namespace AsposePdfLib
 {
     [JSExport]
     public static class MetadataPDF

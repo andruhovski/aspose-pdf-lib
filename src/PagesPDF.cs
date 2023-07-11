@@ -1,7 +1,7 @@
 using Aspose.Pdf;
 using Microsoft.JavaScript.NodeApi;
 
-namespace AsposePdfNodeLib
+namespace AsposePdfLib
 {
 
 

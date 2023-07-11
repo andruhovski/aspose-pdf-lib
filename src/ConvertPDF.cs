@@ -4,7 +4,7 @@ using Aspose.Pdf.Text;
 using Microsoft.JavaScript.NodeApi;
 using System.IO;
 
-namespace AsposePdfNodeLib
+namespace AsposePdfLib
 {
     [JSExport]
     public static class ConvertPDF

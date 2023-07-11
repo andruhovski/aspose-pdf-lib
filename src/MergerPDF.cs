@@ -6,7 +6,7 @@ using System;
 using System.IO;
 using System.Linq;
 
-namespace AsposePdfNodeLib
+namespace AsposePdfLib
 {
     [JSExport]
     public static class MergerPDF

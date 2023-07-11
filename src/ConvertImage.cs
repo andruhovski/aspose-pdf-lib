@@ -2,7 +2,7 @@
 using Microsoft.JavaScript.NodeApi;
 
 
-namespace AsposePdfNodeLib
+namespace AsposePdfLib
 {
     [JSExport]
     public static class ConvertImage
