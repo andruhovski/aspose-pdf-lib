@@ -2,11 +2,9 @@
 const dotnet = require('node-api-dotnet');
 const path = require('node:path');
 
-const assemblyFilePath1 = path.join(__dirname, "lib", "Aspose.Drawing" + '.dll');
-dotnet.load(assemblyFilePath1);
-const assemblyFilePath2 = path.join(__dirname, "lib", "Aspose.PDF" + '.dll');
-dotnet.load(assemblyFilePath2);
-const asposePdfNodeLib = dotnet.require("./lib/AsposePdfNodeLib");
+const assemblyFilePath = path.join(__dirname, "lib", "Aspose.PDF.dll");
+dotnet.load(assemblyFilePath);
+const asposePdfNodeLib = dotnet.require(path.join(__dirname, "lib", "AsposePdfLib"));
 const convertPdf = asposePdfNodeLib.ConvertPDF;
 const convertImage = asposePdfNodeLib.ConvertImage;
 const mergerPDF = asposePdfNodeLib.MergerPDF;
