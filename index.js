@@ -35,11 +35,12 @@ module.exports = {
         CGMtoEMF: (infile, outfile) => ConvertCGM.toEMF(infile, outfile),
         CGMtoEPUB: (infile, outfile) => ConvertCGM.toEPUB(infile, outfile),
         CGMtoGIF: (infile, outfile) => ConvertCGM.toGIF(infile, outfile),
-        CGMtoHTML: (infile, outfile) => ConvertImage.toHTML(infile, outfile),
-        CGMtoSVG: (infile, outfile) => ConvertImage.toSVG(infile, outfile),
-        CGMtoTEX: (infile, outfile) => ConvertImage.toTEX(infile, outfile),
-        CGMtoTIFF: (infile, outfile) => ConvertImage.toTIFF(infile, outfile),
-        CGMtoXPS: (infile, outfile) => ConvertImage.toXPS(infile, outfile),
+        CGMtoHTML: (infile, outfile) => ConvertCGM.toHTML(infile, outfile),
+        CGMtoSVG: (infile, outfile) => ConvertCGM.toSVG(infile, outfile),
+        CGMtoTEX: (infile, outfile) => ConvertCGM.toTEX(infile, outfile),
+        CGMtoTIFF: (infile, outfile) => ConvertCGM.toTIFF(infile, outfile),
+        CGMtoXPS: (infile, outfile) => ConvertCGM.toXPS(infile, outfile)
+        DICOM
     },
     merger: {
         BMPtoPDF: (infiles, outfile) => MergerPDF.mergeBMPtoPDF(infiles, outfile)

@@ -421,6 +421,8 @@ declare module 'node-api-dotnet' {
 		export function getAuthor(inputFile: string): string;
 
 		export function getCreator(inputFile: string): string;
+
+		export function getModDate(inputFile: string): string;
 	}
 
 	export namespace PagesPDF {
@@ -446,6 +448,18 @@ declare module 'node-api-dotnet' {
 			source: number,
 			dstFileName: string,
 			destination: number,
+		): void;
+	}
+
+	export namespace ParserPDF {
+		export function extractText(
+			inputFile: string,
+			outputFile: string,
+		): void;
+
+		export function extractImages(
+			inputFile: string,
+			outputFile: string,
 		): void;
 	}
 }
