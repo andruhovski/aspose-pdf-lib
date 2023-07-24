@@ -39,8 +39,8 @@ module.exports = {
         CGMtoSVG: (infile, outfile) => ConvertCGM.toSVG(infile, outfile),
         CGMtoTEX: (infile, outfile) => ConvertCGM.toTEX(infile, outfile),
         CGMtoTIFF: (infile, outfile) => ConvertCGM.toTIFF(infile, outfile),
-        CGMtoXPS: (infile, outfile) => ConvertCGM.toXPS(infile, outfile)
-        DICOM
+        CGMtoXPS: (infile, outfile) => ConvertCGM.toXPS(infile, outfile),
+        DICOMtoPDF: (infile, outfile) => ConvertDICOM.toPDF(infile, outfile),        
     },
     merger: {
         BMPtoPDF: (infiles, outfile) => MergerPDF.mergeBMPtoPDF(infiles, outfile)
