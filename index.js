@@ -6,7 +6,7 @@ const assemblyFilePath = path.join(__dirname, "lib", "Aspose.PDF.dll");
 dotnet.load(assemblyFilePath);
 const asposePdfNodeLib = dotnet.require(path.join(__dirname, "lib", "AsposePdfLib"));
 // Destructure the methods from the library
-const { ConvertPDF, ConvertCGM, ConvertImage, MergerPDF, MetadataPDF, PageManager, ParserPDF } = asposePdfNodeLib;
+const { ConvertPDF, ConvertCGM, ConvertImage, MergerPDF, MetadataPDF, PageManager, ParserPDF, SplitterPDF } = asposePdfNodeLib;
 module.exports = {
     converter: {
         PDFtoJPEG: (infile, outfile) => ConvertPDF.toJPEG(infile, outfile, 300, 90),
@@ -57,5 +57,8 @@ module.exports = {
     parserPDF: {
         extractText: (infile, outfile) => ParserPDF.extractText(infile, outfile),
         extractImages: (infile, outfile) => ParserPDF.extractImages(infile, outfile)
+    },
+    splitterPDF:{
+        eachPageToSeparateFile: (infile, outfile) => SplitterPDF.eachPages(infile, outfile)
     }
 }

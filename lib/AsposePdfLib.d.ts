@@ -7,6 +7,37 @@ import './Aspose.PDF';
 
 declare module 'node-api-dotnet' {
 
+	export namespace ProtectPDF {
+		export function encrypt(
+			inputFile: string,
+			outPutFile: string,
+			userPassword: string,
+			ownerPassword: string,
+		): void;
+
+		export function decrypt(
+			inputFile: string,
+			outPutFile: string,
+			password: string,
+		): void;
+	}
+
+	export namespace SplitterPDF {
+		export function eachPages(
+			inFile: string,
+			template: string,
+		): void;
+	}
+
+	export namespace AcroFormsPDF {
+		export function fillTextbox(
+			infile: string,
+			outfile: string,
+			fields: string[],
+			values: string[],
+		): void;
+	}
+
 	export namespace ConvertCGM {
 		export function toBMP(
 			inputFile: string,
@@ -92,6 +123,13 @@ declare module 'node-api-dotnet' {
 		): void;
 
 		export function toXPS(
+			inputFile: string,
+			outputFile: string,
+		): void;
+	}
+
+	export namespace ConvertDICOM {
+		export function toPDF(
 			inputFile: string,
 			outputFile: string,
 		): void;

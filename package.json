@@ -11,7 +11,8 @@
     "name": "Andriy Andrukhovskiy"
   },
   "scripts": {
-    "net-build": "dotnet build ./src/AsposePdfLib.csproj"
+    "net-build": "dotnet build ./src/AsposePdfLib.csproj",
+    "net-publish": "dotnet publish ./src/AsposePdfLib.csproj"
   },
   "dependencies": {
     "node-api-dotnet": "0.4.4"
