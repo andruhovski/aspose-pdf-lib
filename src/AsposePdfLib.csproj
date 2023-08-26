@@ -14,4 +14,10 @@
     <PackageReference Include="Microsoft.JavaScript.NodeApi.Generator" Version="0.4.4" PrivateAssets="all" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />    
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Aspose.Drawing.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

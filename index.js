@@ -63,7 +63,7 @@ module.exports = {
         eachPageToSeparateFile: (infile, outfile) => SplitterPDF.eachPages(infile, outfile)
     },
     acroForms: {
-        createTextField: (infile, field) => AcroFormsPDF.createTextBoxField(infile,field),
+        createTextField: (infile, field) => AcroFormsPDF.createTextBoxField(infile,JSON.stringify(field)),
         fillTextFields: (infile, outfile, fields, values) => AcroFormsPDF.fillTextBoxFields(infile, outfile, fields, values),
         extractData : (infile) => AcroFormsPDF.extract(infile)
     }
