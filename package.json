@@ -12,7 +12,7 @@
   },
   "scripts": {
     "net-build": "dotnet build ./src/AsposePdfLib.csproj",
-    "net-publish": "dotnet publish ./src/AsposePdfLib.csproj"
+    "net-publish": "dotnet publish -c Release ./src/AsposePdfLib.csproj --output ./lib"
   },
   "dependencies": {
     "node-api-dotnet": "0.4.4"

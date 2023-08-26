@@ -30,7 +30,14 @@ declare module 'node-api-dotnet' {
 	}
 
 	export namespace AcroFormsPDF {
-		export function fillTextbox(
+		export function createTextBoxField(
+			infile: string,
+			field: AsposePdfLib.TextBoxFieldOptions,
+		): void;
+
+		export function extract(infile: string): Map<string, string>;
+
+		export function fillTextBoxFields(
 			infile: string,
 			outfile: string,
 			fields: string[],
@@ -499,5 +506,37 @@ declare module 'node-api-dotnet' {
 			inputFile: string,
 			outputFile: string,
 		): void;
+	}
+
+	export class TextBoxFieldOptions {
+		constructor();
+
+		x: number;
+
+		y: number;
+
+		width: number;
+
+		height: number;
+
+		name: string;
+
+		value: string;
+
+		pageIndex: number;
+
+		border?: AsposePdfLib.Border;
+	}
+
+	export class Border {
+		constructor();
+
+		gap: number;
+
+		dash: number;
+
+		width: number;
+
+		color: string;
 	}
 }
