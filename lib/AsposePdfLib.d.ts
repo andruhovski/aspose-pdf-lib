@@ -32,7 +32,7 @@ declare module 'node-api-dotnet' {
 	export namespace AcroFormsPDF {
 		export function createTextBoxField(
 			infile: string,
-			field: AsposePdfLib.TextBoxFieldOptions,
+			options: string,
 		): void;
 
 		export function extract(infile: string): Map<string, string>;

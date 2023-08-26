@@ -2,6 +2,7 @@ using Aspose.Pdf;
 using Aspose.Pdf.Annotations;
 using Aspose.Pdf.Forms;
 using Microsoft.JavaScript.NodeApi;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -10,8 +11,10 @@ namespace AsposePdfLib
     [JSExport]
     public static class AcroFormsPDF
     {
-        public static void CreateTextBoxField(string infile, TextBoxFieldOptions field)
+        public static void CreateTextBoxField(string infile, string options)
         {
+            var field = System.Text.Json.JsonSerializer.Deserialize<TextBoxFieldOptions>(options);
+            if (field==null) throw new ArgumentNullException();
             // Open document
             Document document = new(infile);
             var rectangle = new Rectangle(field.X, field.Y, field.X + field.Width, field.Y + field.Height);
