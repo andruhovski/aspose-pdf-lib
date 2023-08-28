@@ -1,6 +1,6 @@
 {
   "name": "aspose-pdf-lib",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Aspose.PDF for NodeJS via .NET",
   "main": "index.js",
   "files": [
