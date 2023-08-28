@@ -142,6 +142,98 @@ declare module 'node-api-dotnet' {
 		): void;
 	}
 
+	export namespace ConvertEMF {
+		export function toPDF(
+			inputFile: string,
+			outputFile: string,
+		): void;
+	}
+
+	export namespace ConvertHTML {
+		export function toBMP(
+			inputFile: string,
+			outputFile: string,
+			resolution: number,
+		): void;
+
+		export function toDOC(
+			inputFile: string,
+			outputFile: string,
+		): void;
+
+		export function toDOCX(
+			inputFile: string,
+			outputFile: string,
+		): void;
+
+		export function toEMF(
+			inputFile: string,
+			outputFile: string,
+			resolution: number,
+		): void;
+
+		export function toEPUB(
+			inputFile: string,
+			outputFile: string,
+		): void;
+
+		export function toGIF(
+			inputFile: string,
+			outputFile: string,
+			resolution: number,
+		): void;
+
+		export function toJPEG(
+			inputFile: string,
+			outputFile: string,
+			resolution: number,
+			quality: number,
+		): void;
+
+		export function toPDFA(
+			inputFile: string,
+			outputFile: string,
+			logFile: string,
+		): void;
+
+		export function toPNG(
+			inputFile: string,
+			outputFile: string,
+			resolution: number,
+		): void;
+
+		export function toPPTX(
+			inputFile: string,
+			outputFile: string,
+		): void;
+
+		export function toSVG(
+			inputFile: string,
+			outputFile: string,
+		): void;
+
+		export function toTEX(
+			inputFile: string,
+			outputFile: string,
+		): void;
+
+		export function toTIFF(
+			inputFile: string,
+			outputFile: string,
+			resolution: number,
+		): void;
+
+		export function toTXT(
+			inputFile: string,
+			outputFile: string,
+		): void;
+
+		export function toXPS(
+			inputFile: string,
+			outputFile: string,
+		): void;
+	}
+
 	export namespace ConvertImage {
 		export function toPDF(
 			inputFile: string,

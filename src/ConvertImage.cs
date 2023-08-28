@@ -1,7 +1,6 @@
 ﻿using Aspose.Pdf;
 using Microsoft.JavaScript.NodeApi;
 
-
 namespace AsposePdfLib
 {
     [JSExport]
@@ -55,3 +54,4 @@ namespace AsposePdfLib
 
     }
 }
+

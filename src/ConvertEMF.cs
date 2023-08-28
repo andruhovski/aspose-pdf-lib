@@ -4,7 +4,7 @@ using Microsoft.JavaScript.NodeApi;
 namespace AsposePdfLib
 {
     [JSExport]
-    public static class ConvertDICOM
+    public static class ConvertEMF
     {
         public static void ToPDF(string inputFile, string outputFile)
         {
@@ -16,7 +16,6 @@ namespace AsposePdfLib
 
             Image image = new()
             {
-                FileType = ImageFileType.Dicom,
                 File = inputFile
             };
             page.Paragraphs.Add(image);
