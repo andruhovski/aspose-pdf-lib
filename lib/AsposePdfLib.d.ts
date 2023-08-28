@@ -600,6 +600,10 @@ declare module 'node-api-dotnet' {
 		): void;
 	}
 
+	export namespace Setup {
+		export function init(path: string): void;
+	}
+
 	export class TextBoxFieldOptions {
 		constructor();
 
