@@ -1,8 +1,10 @@
 ﻿using System.Runtime.CompilerServices;
+using Microsoft.JavaScript.NodeApi;
 
 namespace AsposePdfLib
 {
-    public class Setup
+    [JSExport]
+    public static class Setup
     {
         public static void Init(string path)
         {
