@@ -1,5 +1,6 @@
 'use strict';
 const dotnet = require('node-api-dotnet');
+const { log } = require('node:console');
 const path = require('node:path');
 
 const assemblyFilePath = path.join(__dirname, "lib", "Aspose.PDF.dll");
@@ -8,7 +9,7 @@ const asposePdfNodeLib = dotnet.require(path.join(__dirname, "lib", "AsposePdfLi
 // Destructure the methods from the library
 const { AcroFormsPDF, ConvertPDF, ConvertCGM, ConvertImage, MergerPDF, MetadataPDF, 
     PageManager, ParserPDF, SplitterPDF, Setup } = asposePdfNodeLib;
-Setup.Init("../../lic.txt");
+Setup.init(path.join(process.cwd(),"Aspose.PDF.lic"));
 module.exports = {
     converter: {
         PDFtoJPEG: (infile, outfile) => ConvertPDF.toJPEG(infile, outfile, 300, 90),

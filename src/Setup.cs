@@ -15,7 +15,7 @@ namespace AsposePdfLib
             }
             else
             {
-                System.Console.WriteLine();
+                System.Console.WriteLine("Licence file not found.");
             }
         }
     }

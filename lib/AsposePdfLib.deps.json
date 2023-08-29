@@ -10,23 +10,10 @@
         "dependencies": {
           "Aspose.PDF.Drawing": "23.6.0",
           "Microsoft.JavaScript.NodeApi": "0.4.4",
-          "Microsoft.JavaScript.NodeApi.Generator": "0.4.4",
-          "runtimepack.Microsoft.Windows.SDK.NET.Ref": "10.0.22621.29"
+          "Microsoft.JavaScript.NodeApi.Generator": "0.4.4"
         },
         "runtime": {
           "AsposePdfLib.dll": {}
-        }
-      },
-      "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.22621.29": {
-        "runtime": {
-          "Microsoft.Windows.SDK.NET.dll": {
-            "assemblyVersion": "10.0.22621.24",
-            "fileVersion": "10.0.22621.29"
-          },
-          "WinRT.Runtime.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.3.42921"
-          }
         }
       },
       "Aspose.PDF.Drawing/23.6.0": {
@@ -606,11 +593,6 @@
   "libraries": {
     "AsposePdfLib/1.0.0": {
       "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "runtimepack.Microsoft.Windows.SDK.NET.Ref/10.0.22621.29": {
-      "type": "runtimepack",
       "serviceable": false,
       "sha512": ""
     },
